@@ -9,8 +9,7 @@ This package is a useful Flutter tool to extract values from JSON.
 
 ## Getting started
 
-To use this package, ensure you have Flutter installed and add the package to
-your `pubspec.yaml`.
+To use this package, ensure you have Flutter installed and add the package to your `pubspec.yaml`.
 
 1. Add the package to your `pubspec.yaml` file:
 
@@ -31,9 +30,8 @@ import 'package:json_getter/json_getter.dart';
 
 ```dart
 const jsonString = '{"key1": "value1", "key2": "value2"}';
-final filters = FiltersMapper.fromJson(
-    '{"filters":[{"selectorType":"getValueByKey","filterBy":null,"key":"key1","operator":null,"value":null}]}',
-);
+const filtersString = '{"filters":[{"selectorType":"getValueByKey","filterBy":null,"key":"key1","operator":null,"value":null}]}';
+final filters = FiltersMapper.fromJson(filtersString);
 
 final result = JsonGetter.get(filters: filters, json: jsonString);
 print(result); // Output: value1
@@ -42,7 +40,7 @@ print(result); // Output: value1
 ### With JSON Map
 
 ```dart
-const jsonString = {'key1': 'value1', 'key2': 'value2'};
+const json = {'key1': 'value1', 'key2': 'value2'};
 final filters = Filters(
   filters: [
     const Filter(
@@ -52,7 +50,7 @@ final filters = Filters(
   ],
 );
 
-final result = JsonGetter.get(filters: filters, json: jsonString);
+final result = JsonGetter.get(filters: filters, json: json);
 print(result); // Output: value1
 ```
 
@@ -60,14 +58,11 @@ print(result); // Output: value1
 
 [Json Getter Builder](https://chungxon.github.io/json_getter/)
 
-<a href="https://chungxon.github.io/json_getter/" rel="Json Getter
-Builder">![image
-info](https://github.com/chungxon/json_getter/blob/master/repo/json_getter.gif?raw=true)</a> 
+<a href="https://chungxon.github.io/json_getter/" rel="Json Getter Builder">![image info](./../../repo/json_getter.gif)</a>
 
 ## Additional information
 
-For more information, visit the [GitHub
-repository](https://github.com/chungxon/json_getter).
+For more information, visit the [GitHub repository](https://github.com/chungxon/json_getter).
 
 ## License
 
