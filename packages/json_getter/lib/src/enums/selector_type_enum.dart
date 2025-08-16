@@ -6,16 +6,36 @@ part 'selector_type_enum.mapper.dart';
 
 @MappableEnum()
 enum SelectorType {
-  getValueByKey, // For map only
-  getAllKeys, // For map only
-  getAllValues, // For map only
-  getLength, // For both list and map
-  getValueFromWhere, // Filter map with condition by key or value, loop all items in list to get value with condition by key or value
-  getValueAt, // For list only
-  getValueFirst, // For list only
-  getValueLast, // For list only
-  join, // For list string only
-  getItemsFromWhere, // For list only
+  /// For map only
+  getValueByKey,
+
+  /// For map only
+  getAllKeys,
+
+  /// For map only
+  getAllValues,
+
+  /// For both list and map
+  getLength,
+
+  /// Filter map with condition by key or value, loop all items in list to get
+  /// value with condition by key or value
+  getValueFromWhere,
+
+  /// For list only
+  getValueAt,
+
+  /// For list only
+  getValueFirst,
+
+  /// For list only
+  getValueLast,
+
+  /// For list string only
+  join,
+
+  /// For list only
+  getItemsFromWhere,
   ;
 
   static List<SelectorType> getSupportSelectorTypes(dynamic json) {

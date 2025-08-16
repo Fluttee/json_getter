@@ -33,10 +33,10 @@ class JsonGetterSection extends StatefulWidget {
 }
 
 class _JsonGetterSectionState extends State<JsonGetterSection> {
-  // Json source, could be map or list
+  /// Json source, could be map or list
   dynamic get jsonSource => TypeUtils.tryParseJson(widget.rawJson);
 
-  // Selector type
+  /// Selector type
   List<SelectorType> get _availableSelectorTypes =>
       SelectorType.getSupportSelectorTypes(jsonSource);
   final ValueNotifier<SelectorType?> _selectedTypeNotifier =
@@ -45,10 +45,10 @@ class _JsonGetterSectionState extends State<JsonGetterSection> {
   final TextEditingController keyController = TextEditingController();
   final TextEditingController valueController = TextEditingController();
 
-  // Filter
+  /// Filter
   Filter filter = const Filter();
 
-  // Json output
+  /// Json output
   dynamic jsonOutput;
 
   @override
