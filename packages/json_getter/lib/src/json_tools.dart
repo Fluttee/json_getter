@@ -647,9 +647,9 @@ class JsonTools {
       case Operator.contains:
         if (json is Map) {
           final data = {};
-          json.forEach((key, value) {
-            if (key.toString().contains(key)) {
-              data[key] = value;
+          json.forEach((k, v) {
+            if (k.toString().contains(key.toString())) {
+              data[k] = v;
             }
           });
           return data;
