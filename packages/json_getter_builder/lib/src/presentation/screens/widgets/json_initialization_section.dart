@@ -69,40 +69,39 @@ class _JsonInitializationSectionState extends State<JsonInitializationSection> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       const TitleWidget('JSON Source:'),
-                      Wrap(
-                        spacing: 8,
-                        children: [
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Radio<JsonSource>(
-                                value: JsonSource.rawJson,
-                                groupValue: model.jsonSource,
-                                onChanged: (value) => model
-                                    .setJsonSource(value ?? JsonSource.rawJson),
-                              ),
-                              Text(
-                                'Raw JSON',
-                                style: Theme.of(context).textTheme.bodyMedium,
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Radio<JsonSource>(
-                                value: JsonSource.url,
-                                groupValue: model.jsonSource,
-                                onChanged: (value) => model
-                                    .setJsonSource(value ?? JsonSource.url),
-                              ),
-                              Text(
-                                'URL',
-                                style: Theme.of(context).textTheme.bodyMedium,
-                              ),
-                            ],
-                          ),
-                        ],
+                      RadioGroup(
+                        groupValue: model.jsonSource,
+                        onChanged: (value) =>
+                            model.setJsonSource(value ?? JsonSource.rawJson),
+                        child: Wrap(
+                          spacing: 8,
+                          children: [
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Radio<JsonSource>(
+                                  value: JsonSource.rawJson,
+                                ),
+                                Text(
+                                  'Raw JSON',
+                                  style: Theme.of(context).textTheme.bodyMedium,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Radio<JsonSource>(
+                                  value: JsonSource.url,
+                                ),
+                                Text(
+                                  'URL',
+                                  style: Theme.of(context).textTheme.bodyMedium,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

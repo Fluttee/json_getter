@@ -4,7 +4,7 @@ class TypeUtils {
   /// Check is json
   static bool isJson(dynamic json) {
     try {
-      dynamic data = json;
+      var data = json;
       if (json is String) {
         data = jsonDecode(json);
       }
@@ -18,7 +18,7 @@ class TypeUtils {
   /// Check is not empty json
   static bool isNotEmptyJson(dynamic json) {
     try {
-      dynamic data = json;
+      var data = json;
       if (json is String) {
         data = jsonDecode(json);
       }

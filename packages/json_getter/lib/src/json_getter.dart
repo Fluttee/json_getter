@@ -11,7 +11,7 @@ class JsonGetter {
       return null;
     }
 
-    dynamic result = json;
+    var result = json;
 
     if (json is String) {
       result = TypeUtils.tryParseJson(json);
@@ -32,7 +32,7 @@ class JsonGetter {
       return null;
     }
 
-    dynamic result = json;
+    var result = json;
 
     if (json is String) {
       result = TypeUtils.tryParseJson(json);
