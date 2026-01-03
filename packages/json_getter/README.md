@@ -15,7 +15,7 @@ To use this package, ensure you have Flutter installed and add the package to yo
 
 ```yaml
 dependencies:
-  json_getter: ^0.0.1
+  json_getter: ^0.0.3
 ```
 
 2. Import the package in your Dart file:

@@ -1,3 +1,7 @@
+## 0.0.3
+
+* fix: correct contains operator logic
+
 ## 0.0.2
 
 * Update example
