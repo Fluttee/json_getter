@@ -36,8 +36,12 @@ class TypeUtils {
 
   /// Parse json from dynamic
   static dynamic tryParseJson(dynamic json) {
+    if (json == null) {
+      return null;
+    }
+
     try {
-      return jsonDecode(json);
+      return jsonDecode(json.toString());
     } catch (e) {
       return null;
     }

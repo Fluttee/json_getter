@@ -11,4 +11,7 @@ class Filters with FiltersMappable {
   });
 
   List<Filter> filters;
+
+  static const fromMap = FiltersMapper.fromMap;
+  static const fromJson = FiltersMapper.fromJson;
 }

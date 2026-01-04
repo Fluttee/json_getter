@@ -31,7 +31,7 @@ import 'package:json_getter/json_getter.dart';
 ```dart
 const jsonString = '{"key1": "value1", "key2": "value2"}';
 const filtersString = '{"filters":[{"selectorType":"getValueByKey","filterBy":null,"key":"key1","operator":null,"value":null}]}';
-final filters = FiltersMapper.fromJson(filtersString);
+final filters = Filters.fromJson(filtersString);
 
 final result = JsonGetter.get(filters: filters, json: jsonString);
 print(result); // Output: value1
