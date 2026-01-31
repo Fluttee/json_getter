@@ -1,6 +1,6 @@
 # JsonGetter
 
-This package is a useful Flutter tool to extract values from JSON.
+This package is a useful Dart tool to extract values from JSON.
 
 ## Features
 
@@ -9,7 +9,7 @@ This package is a useful Flutter tool to extract values from JSON.
 
 ## Getting started
 
-To use this package, ensure you have Flutter installed and add the package to your `pubspec.yaml`.
+To use this package, ensure you have Dart SDK installed and add the package to your `pubspec.yaml`.
 
 1. Add the package to your `pubspec.yaml` file:
 

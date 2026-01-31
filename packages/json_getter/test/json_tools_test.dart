@@ -1,5 +1,5 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:json_getter/json_getter.dart';
+import 'package:test/test.dart';
 
 void main() {
   group('getAllKeys', () {
@@ -1465,7 +1465,7 @@ void main() {
         const filter = Filter(
           selectorType: SelectorType.getItemsFromWhere,
           filterBy: FilterBy.key,
-          key: 'key1',
+          key: 'key',
           operator: Operator.contains,
         );
         final json = {'key1': 'value1', 'key2': 'value2'};

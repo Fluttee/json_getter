@@ -1,5 +1,5 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:json_getter/json_getter.dart';
+import 'package:test/test.dart';
 
 void main() {
   group('DataType Enum Tests', () {
