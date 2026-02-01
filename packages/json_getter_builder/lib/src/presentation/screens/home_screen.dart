@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         model
                           ..setRawJson(jsonEncode(jsonMock))
                           ..setFilters(
-                            FiltersMapper.fromMap(filtersMock),
+                            Filters.fromMap(filtersMock),
                           );
                       },
                       label: const Text('Use Example Data'),
@@ -117,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           }
                           final filters = value.text ?? '';
                           model.setFilters(
-                            FiltersMapper.fromJson(filters),
+                            Filters.fromJson(filters),
                           );
                         });
                       },

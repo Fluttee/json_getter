@@ -96,7 +96,7 @@ class Product {
         return MapEntry(
           key,
           JsonGetter.get(
-            filters: FiltersMapper.fromMap(filter),
+            filters: Filters.fromMap(filter),
             json: json,
           ),
         );

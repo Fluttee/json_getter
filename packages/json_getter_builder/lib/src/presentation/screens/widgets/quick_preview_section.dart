@@ -52,7 +52,7 @@ class QuickPreviewSection extends StatelessWidget {
               child: JsonPreviewerWidget(
                 rawJson: jsonEncode(
                   JsonGetter.get(
-                    filters: FiltersMapper.fromJson(filterJson),
+                    filters: Filters.fromJson(filterJson),
                     json: rawJson,
                   ),
                 ),

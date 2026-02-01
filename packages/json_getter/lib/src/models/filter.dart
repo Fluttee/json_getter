@@ -30,4 +30,7 @@ class Filter with FilterMappable {
 
   /// Value
   final dynamic value;
+
+  static const fromMap = FilterMapper.fromMap;
+  static const fromJson = FilterMapper.fromJson;
 }
