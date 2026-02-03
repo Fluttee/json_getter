@@ -1,6 +1,8 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
 // ignore_for_file: type=lint
+// ignore_for_file: invalid_use_of_protected_member
 // ignore_for_file: unused_element, unnecessary_cast, override_on_non_overriding_member
 // ignore_for_file: strict_raw_type, inference_failure_on_untyped_parameter
 
@@ -25,33 +27,33 @@ class OperatorMapper extends EnumMapper<Operator> {
   @override
   Operator decode(dynamic value) {
     switch (value) {
-      case 'equal':
+      case r'equal':
         return Operator.equal;
-      case 'notEqual':
+      case r'notEqual':
         return Operator.notEqual;
-      case 'contains':
+      case r'contains':
         return Operator.contains;
-      case 'notContains':
+      case r'notContains':
         return Operator.notContains;
-      case 'startsWith':
+      case r'startsWith':
         return Operator.startsWith;
-      case 'notStartsWith':
+      case r'notStartsWith':
         return Operator.notStartsWith;
-      case 'endsWith':
+      case r'endsWith':
         return Operator.endsWith;
-      case 'notEndsWith':
+      case r'notEndsWith':
         return Operator.notEndsWith;
-      case 'isEmpty':
+      case r'isEmpty':
         return Operator.isEmpty;
-      case 'isNotEmpty':
+      case r'isNotEmpty':
         return Operator.isNotEmpty;
-      case 'greaterThan':
+      case r'greaterThan':
         return Operator.greaterThan;
-      case 'greaterThanOrEqual':
+      case r'greaterThanOrEqual':
         return Operator.greaterThanOrEqual;
-      case 'lessThan':
+      case r'lessThan':
         return Operator.lessThan;
-      case 'lessThanOrEqual':
+      case r'lessThanOrEqual':
         return Operator.lessThanOrEqual;
       default:
         throw MapperException.unknownEnumValue(value);
@@ -62,33 +64,33 @@ class OperatorMapper extends EnumMapper<Operator> {
   dynamic encode(Operator self) {
     switch (self) {
       case Operator.equal:
-        return 'equal';
+        return r'equal';
       case Operator.notEqual:
-        return 'notEqual';
+        return r'notEqual';
       case Operator.contains:
-        return 'contains';
+        return r'contains';
       case Operator.notContains:
-        return 'notContains';
+        return r'notContains';
       case Operator.startsWith:
-        return 'startsWith';
+        return r'startsWith';
       case Operator.notStartsWith:
-        return 'notStartsWith';
+        return r'notStartsWith';
       case Operator.endsWith:
-        return 'endsWith';
+        return r'endsWith';
       case Operator.notEndsWith:
-        return 'notEndsWith';
+        return r'notEndsWith';
       case Operator.isEmpty:
-        return 'isEmpty';
+        return r'isEmpty';
       case Operator.isNotEmpty:
-        return 'isNotEmpty';
+        return r'isNotEmpty';
       case Operator.greaterThan:
-        return 'greaterThan';
+        return r'greaterThan';
       case Operator.greaterThanOrEqual:
-        return 'greaterThanOrEqual';
+        return r'greaterThanOrEqual';
       case Operator.lessThan:
-        return 'lessThan';
+        return r'lessThan';
       case Operator.lessThanOrEqual:
-        return 'lessThanOrEqual';
+        return r'lessThanOrEqual';
     }
   }
 }
@@ -99,3 +101,4 @@ extension OperatorMapperExtension on Operator {
     return MapperContainer.globals.toValue<Operator>(this) as String;
   }
 }
+

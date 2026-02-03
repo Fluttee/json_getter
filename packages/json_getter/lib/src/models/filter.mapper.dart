@@ -1,6 +1,8 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
 // ignore_for_file: type=lint
+// ignore_for_file: invalid_use_of_protected_member
 // ignore_for_file: unused_element, unnecessary_cast, override_on_non_overriding_member
 // ignore_for_file: strict_raw_type, inference_failure_on_untyped_parameter
 
@@ -24,19 +26,31 @@ class FilterMapper extends ClassMapperBase<Filter> {
   final String id = 'Filter';
 
   static SelectorType? _$selectorType(Filter v) => v.selectorType;
-  static const Field<Filter, SelectorType> _f$selectorType =
-      Field('selectorType', _$selectorType, opt: true);
+  static const Field<Filter, SelectorType> _f$selectorType = Field(
+    'selectorType',
+    _$selectorType,
+    opt: true,
+  );
   static FilterBy? _$filterBy(Filter v) => v.filterBy;
-  static const Field<Filter, FilterBy> _f$filterBy =
-      Field('filterBy', _$filterBy, opt: true);
+  static const Field<Filter, FilterBy> _f$filterBy = Field(
+    'filterBy',
+    _$filterBy,
+    opt: true,
+  );
   static String? _$key(Filter v) => v.key;
   static const Field<Filter, String> _f$key = Field('key', _$key, opt: true);
   static Operator? _$operator(Filter v) => v.operator;
-  static const Field<Filter, Operator> _f$operator =
-      Field('operator', _$operator, opt: true);
+  static const Field<Filter, Operator> _f$operator = Field(
+    'operator',
+    _$operator,
+    opt: true,
+  );
   static dynamic _$value(Filter v) => v.value;
-  static const Field<Filter, dynamic> _f$value =
-      Field('value', _$value, opt: true);
+  static const Field<Filter, dynamic> _f$value = Field(
+    'value',
+    _$value,
+    opt: true,
+  );
 
   @override
   final MappableFields<Filter> fields = const {
@@ -49,11 +63,12 @@ class FilterMapper extends ClassMapperBase<Filter> {
 
   static Filter _instantiate(DecodingData data) {
     return Filter(
-        selectorType: data.dec(_f$selectorType),
-        filterBy: data.dec(_f$filterBy),
-        key: data.dec(_f$key),
-        operator: data.dec(_f$operator),
-        value: data.dec(_f$value));
+      selectorType: data.dec(_f$selectorType),
+      filterBy: data.dec(_f$filterBy),
+      key: data.dec(_f$key),
+      operator: data.dec(_f$operator),
+      value: data.dec(_f$value),
+    );
   }
 
   @override
@@ -78,7 +93,7 @@ mixin FilterMappable {
   }
 
   FilterCopyWith<Filter, Filter, Filter> get copyWith =>
-      _FilterCopyWithImpl(this as Filter, $identity, $identity);
+      _FilterCopyWithImpl<Filter, Filter>(this as Filter, $identity, $identity);
   @override
   String toString() {
     return FilterMapper.ensureInitialized().stringifyValue(this as Filter);
@@ -97,17 +112,18 @@ mixin FilterMappable {
 
 extension FilterValueCopy<$R, $Out> on ObjectCopyWith<$R, Filter, $Out> {
   FilterCopyWith<$R, Filter, $Out> get $asFilter =>
-      $base.as((v, t, t2) => _FilterCopyWithImpl(v, t, t2));
+      $base.as((v, t, t2) => _FilterCopyWithImpl<$R, $Out>(v, t, t2));
 }
 
 abstract class FilterCopyWith<$R, $In extends Filter, $Out>
     implements ClassCopyWith<$R, $In, $Out> {
-  $R call(
-      {SelectorType? selectorType,
-      FilterBy? filterBy,
-      String? key,
-      Operator? operator,
-      dynamic value});
+  $R call({
+    SelectorType? selectorType,
+    FilterBy? filterBy,
+    String? key,
+    Operator? operator,
+    dynamic value,
+  });
   FilterCopyWith<$R2, $In, $Out2> $chain<$R2, $Out2>(Then<$Out2, $R2> t);
 }
 
@@ -118,28 +134,32 @@ class _FilterCopyWithImpl<$R, $Out> extends ClassCopyWithBase<$R, Filter, $Out>
   @override
   late final ClassMapperBase<Filter> $mapper = FilterMapper.ensureInitialized();
   @override
-  $R call(
-          {Object? selectorType = $none,
-          Object? filterBy = $none,
-          Object? key = $none,
-          Object? operator = $none,
-          Object? value = $none}) =>
-      $apply(FieldCopyWithData({
-        if (selectorType != $none) #selectorType: selectorType,
-        if (filterBy != $none) #filterBy: filterBy,
-        if (key != $none) #key: key,
-        if (operator != $none) #operator: operator,
-        if (value != $none) #value: value
-      }));
+  $R call({
+    Object? selectorType = $none,
+    Object? filterBy = $none,
+    Object? key = $none,
+    Object? operator = $none,
+    Object? value = $none,
+  }) => $apply(
+    FieldCopyWithData({
+      if (selectorType != $none) #selectorType: selectorType,
+      if (filterBy != $none) #filterBy: filterBy,
+      if (key != $none) #key: key,
+      if (operator != $none) #operator: operator,
+      if (value != $none) #value: value,
+    }),
+  );
   @override
   Filter $make(CopyWithData data) => Filter(
-      selectorType: data.get(#selectorType, or: $value.selectorType),
-      filterBy: data.get(#filterBy, or: $value.filterBy),
-      key: data.get(#key, or: $value.key),
-      operator: data.get(#operator, or: $value.operator),
-      value: data.get(#value, or: $value.value));
+    selectorType: data.get(#selectorType, or: $value.selectorType),
+    filterBy: data.get(#filterBy, or: $value.filterBy),
+    key: data.get(#key, or: $value.key),
+    operator: data.get(#operator, or: $value.operator),
+    value: data.get(#value, or: $value.value),
+  );
 
   @override
   FilterCopyWith<$R2, Filter, $Out2> $chain<$R2, $Out2>(Then<$Out2, $R2> t) =>
-      _FilterCopyWithImpl($value, $cast, t);
+      _FilterCopyWithImpl<$R2, $Out2>($value, $cast, t);
 }
+

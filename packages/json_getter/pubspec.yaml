@@ -4,7 +4,7 @@ version: 0.0.3
 homepage: https://github.com/fluttee/json_getter
 
 environment:
-  sdk: ^3.6.0
+  sdk: ^3.10.0
 
 resolution: workspace
 
@@ -13,7 +13,7 @@ dependencies:
   dart_mappable: ^4.3.0
 
 dev_dependencies:
-  lints: ^5.0.0
+  lints: ^6.1.0
   test: ^1.24.0
   build_runner: ^2.4.14
   dart_mappable_builder: ^4.3.0

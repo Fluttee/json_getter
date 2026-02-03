@@ -1,6 +1,8 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
 // ignore_for_file: type=lint
+// ignore_for_file: invalid_use_of_protected_member
 // ignore_for_file: unused_element, unnecessary_cast, override_on_non_overriding_member
 // ignore_for_file: strict_raw_type, inference_failure_on_untyped_parameter
 
@@ -25,9 +27,9 @@ class FilterByMapper extends EnumMapper<FilterBy> {
   @override
   FilterBy decode(dynamic value) {
     switch (value) {
-      case 'key':
+      case r'key':
         return FilterBy.key;
-      case 'value':
+      case r'value':
         return FilterBy.value;
       default:
         throw MapperException.unknownEnumValue(value);
@@ -38,9 +40,9 @@ class FilterByMapper extends EnumMapper<FilterBy> {
   dynamic encode(FilterBy self) {
     switch (self) {
       case FilterBy.key:
-        return 'key';
+        return r'key';
       case FilterBy.value:
-        return 'value';
+        return r'value';
     }
   }
 }
@@ -51,3 +53,4 @@ extension FilterByMapperExtension on FilterBy {
     return MapperContainer.globals.toValue<FilterBy>(this) as String;
   }
 }
+

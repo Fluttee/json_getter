@@ -1,6 +1,8 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// dart format off
 // ignore_for_file: type=lint
+// ignore_for_file: invalid_use_of_protected_member
 // ignore_for_file: unused_element, unnecessary_cast, override_on_non_overriding_member
 // ignore_for_file: strict_raw_type, inference_failure_on_untyped_parameter
 
@@ -22,13 +24,13 @@ class FiltersMapper extends ClassMapperBase<Filters> {
   final String id = 'Filters';
 
   static List<Filter> _$filters(Filters v) => v.filters;
-  static const Field<Filters, List<Filter>> _f$filters =
-      Field('filters', _$filters);
+  static const Field<Filters, List<Filter>> _f$filters = Field(
+    'filters',
+    _$filters,
+  );
 
   @override
-  final MappableFields<Filters> fields = const {
-    #filters: _f$filters,
-  };
+  final MappableFields<Filters> fields = const {#filters: _f$filters};
 
   static Filters _instantiate(DecodingData data) {
     return Filters(filters: data.dec(_f$filters));
@@ -48,17 +50,23 @@ class FiltersMapper extends ClassMapperBase<Filters> {
 
 mixin FiltersMappable {
   String toJson() {
-    return FiltersMapper.ensureInitialized()
-        .encodeJson<Filters>(this as Filters);
+    return FiltersMapper.ensureInitialized().encodeJson<Filters>(
+      this as Filters,
+    );
   }
 
   Map<String, dynamic> toMap() {
-    return FiltersMapper.ensureInitialized()
-        .encodeMap<Filters>(this as Filters);
+    return FiltersMapper.ensureInitialized().encodeMap<Filters>(
+      this as Filters,
+    );
   }
 
   FiltersCopyWith<Filters, Filters, Filters> get copyWith =>
-      _FiltersCopyWithImpl(this as Filters, $identity, $identity);
+      _FiltersCopyWithImpl<Filters, Filters>(
+        this as Filters,
+        $identity,
+        $identity,
+      );
   @override
   String toString() {
     return FiltersMapper.ensureInitialized().stringifyValue(this as Filters);
@@ -66,8 +74,10 @@ mixin FiltersMappable {
 
   @override
   bool operator ==(Object other) {
-    return FiltersMapper.ensureInitialized()
-        .equalsValue(this as Filters, other);
+    return FiltersMapper.ensureInitialized().equalsValue(
+      this as Filters,
+      other,
+    );
   }
 
   @override
@@ -78,7 +88,7 @@ mixin FiltersMappable {
 
 extension FiltersValueCopy<$R, $Out> on ObjectCopyWith<$R, Filters, $Out> {
   FiltersCopyWith<$R, Filters, $Out> get $asFilters =>
-      $base.as((v, t, t2) => _FiltersCopyWithImpl(v, t, t2));
+      $base.as((v, t, t2) => _FiltersCopyWithImpl<$R, $Out>(v, t, t2));
 }
 
 abstract class FiltersCopyWith<$R, $In extends Filters, $Out>
@@ -98,8 +108,11 @@ class _FiltersCopyWithImpl<$R, $Out>
       FiltersMapper.ensureInitialized();
   @override
   ListCopyWith<$R, Filter, FilterCopyWith<$R, Filter, Filter>> get filters =>
-      ListCopyWith($value.filters, (v, t) => v.copyWith.$chain(t),
-          (v) => call(filters: v));
+      ListCopyWith(
+        $value.filters,
+        (v, t) => v.copyWith.$chain(t),
+        (v) => call(filters: v),
+      );
   @override
   $R call({List<Filter>? filters}) =>
       $apply(FieldCopyWithData({if (filters != null) #filters: filters}));
@@ -109,5 +122,6 @@ class _FiltersCopyWithImpl<$R, $Out>
 
   @override
   FiltersCopyWith<$R2, Filters, $Out2> $chain<$R2, $Out2>(Then<$Out2, $R2> t) =>
-      _FiltersCopyWithImpl($value, $cast, t);
+      _FiltersCopyWithImpl<$R2, $Out2>($value, $cast, t);
 }
+
